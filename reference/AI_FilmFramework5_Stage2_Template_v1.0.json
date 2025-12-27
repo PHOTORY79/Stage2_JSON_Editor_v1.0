@@ -1,0 +1,253 @@
+{
+  "film_id": "FILM_000001",
+  "current_step": "visual_direction_2B",
+  "timestamp": "2024-12-14T11:00:00Z",
+  
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "scene_title": "오래된 도서관의 비밀",
+      "scene_scenario": "INT. 도서관 - 낮\n\n낡은 도서관의 전경. 햇빛이 먼지 낀 창문으로 스며든다.\n\n민준이 조심스럽게 문을 열고 들어선다.\n\n          민준\n     (나지막이)\n  여기가 할아버지가 말씀하신 곳인가...\n\n오래된 책장들 사이를 천천히 걸어간다.\n\n갑자기 한 권의 책이 책장에서 떨어진다.\n\n          민준\n     (놀라며)\n  뭐야!\n\n떨어진 책을 집어든다. 표지에 이상한 문양이 새겨져 있다.",
+      "concept_art_references": {
+        "characters": ["Minjun"],
+        "location": "Old_Library",
+        "props": ["Ancient_Book"]
+      },
+      "shots": [
+        {
+          "shot_id": "S01.01.01",
+          "shot_type": "regular",
+          "shot_text": "낡은 도서관의 전경. 햇빛이 먼지 낀 창문으로 스며든다.",
+          "shot_character": [],
+          
+          "scene": "A tranquil opening scene of a library frozen in time",
+          
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Dust particles slowly drift in sunlight, light beams gradually shift across bookshelves",
+            "mood_emotion": "Mysterious and quiet atmosphere, as if waiting for something"
+          },
+          
+          "camera_movement": {
+            "type": "dolly_in",
+            "speed": "very_slow",
+            "duration": "8s",
+            "focus_shift": "gradual_focus_pull"
+          },
+          
+          "starting_frame": {
+            "environment": "Wide view of library entrance, dim silhouette in darkness",
+            "camera_composition": "wide shot, front view, eye level, symmetrical"
+          },
+          
+          "ending_frame": {
+            "environment": "Central aisle bathed in light, dust sparkling golden",
+            "camera_composition": "medium wide shot, slightly low angle, central perspective, depth staging"
+          }
+        },
+        {
+          "shot_id": "S01.02.01",
+          "shot_type": "regular",
+          "shot_text": "민준이 조심스럽게 문을 열고 들어선다.",
+          "shot_character": ["Minjun"],
+          
+          "scene": "The tense moment as Minjun takes his first step into unknown space",
+          
+          "movement_description": {
+            "action": {"Minjun": "Slowly turns door handle, pushes door slightly open to check inside, then carefully enters"},
+            "expression": {"Minjun": "Mixed expression of tension and curiosity, eyes quickly scanning surroundings"},
+            "environment_move": "Door opens letting corridor light stream into library, dust particles rise",
+            "mood_emotion": "Cautious exploration, fear and curiosity about the unknown"
+          },
+          
+          "camera_movement": {
+            "type": "static",
+            "duration": "5s",
+            "secondary": "slight_push_in_at_end"
+          },
+          
+          "starting_frame": {
+            "Minjun": "reaching for door handle from outside, back view, slightly hesitant posture",
+            "environment": "Heavy wooden door closed",
+            "camera_composition": "medium shot, back view, eye level, center frame"
+          },
+          
+          "ending_frame": {
+            "Minjun": "with one foot inside library, three-quarter view, looking around",
+            "environment": "Light streaming through open door, dust swirling inside library",
+            "camera_composition": "medium full shot, three-quarter view, slightly low angle, rule of thirds"
+          }
+        },
+        {
+          "shot_id": "S01.03.01",
+          "shot_type": "regular",
+          "shot_text": "민준: (나지막이) 여기가 할아버지가 말씀하신 곳인가...",
+          "shot_character": ["Minjun"],
+          
+          "scene": "The moment Minjun recalls his grandfather's words with deep emotion",
+          
+          "movement_description": {
+            "action": {"Minjun": "Slowly raises head to look around the library interior, whispering to himself"},
+            "expression": {"Minjun": "Expression mixed with longing and determination, eyes becoming moist"},
+            "environment_move": "Light from window illuminates Minjun's face",
+            "mood_emotion": "Emotional moment where past and present intersect"
+          },
+          
+          "camera_movement": {
+            "type": "slow_push_in",
+            "speed": "very_slow",
+            "duration": "4s",
+            "focus_shift": "background_blur_increase"
+          },
+          
+          "starting_frame": {
+            "Minjun": "standing at library entrance looking ahead, full body",
+            "environment": "Light from window illuminating Minjun's face",
+            "camera_composition": "medium shot, front view, eye level, center frame"
+          },
+          
+          "ending_frame": {
+            "Minjun": "with emotional expression, close-up",
+            "environment": "Light from window illuminating Minjun's face, background blurred",
+            "camera_composition": "close-up shot, front view, eye level, tight frame"
+          }
+        },
+        {
+          "shot_id": "S01.04.01",
+          "shot_type": "regular",
+          "shot_text": "오래된 책장들 사이를 천천히 걸어간다.",
+          "shot_character": ["Minjun"],
+          
+          "scene": "A scene of exploration as Minjun ventures deep into the maze-like bookshelves",
+          
+          "movement_description": {
+            "action": {"Minjun": "Walking between bookshelves while trailing fingers along book spines"},
+            "expression": {"Minjun": "Expression of wonder, looking at old books with curiosity"},
+            "environment_move": "Dust rises with footsteps, light and shadow intersect",
+            "mood_emotion": "Excitement of exploration and journey into the past"
+          },
+          
+          "camera_movement": {
+            "type": "tracking_backward",
+            "speed": "match_subject",
+            "duration": "6s",
+            "secondary": "slight_crane_up"
+          },
+          
+          "starting_frame": {
+            "Minjun": "standing at entrance of bookshelf corridor, front view, full body",
+            "environment": "Narrow bookshelf corridor, tall shelves on both sides",
+            "camera_composition": "full shot, front view, eye level, leading lines"
+          },
+          
+          "ending_frame": {
+            "Minjun": "deep in the corridor, view from slightly above",
+            "environment": "Dust rising with footsteps, light and shadow intersecting",
+            "camera_composition": "full shot, high angle, front view, deep focus"
+          }
+        },
+        {
+          "shot_id": "S01.05.01",
+          "shot_type": "regular",
+          "shot_text": "갑자기 한 권의 책이 책장에서 떨어진다.",
+          "shot_character": [],
+          
+          "scene": "An ominous moment as a book suddenly falls, breaking the silence",
+          
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Book slides out from shelf by itself and falls to floor, dust cloud rises",
+            "mood_emotion": "Sudden shock and anxiety"
+          },
+          
+          "camera_movement": {
+            "type": "whip_pan_down",
+            "speed": "fast",
+            "duration": "2s",
+            "secondary": "slight_shake_on_impact"
+          },
+          
+          "starting_frame": {
+            "environment": "Orderly bookshelf with one book slightly protruding",
+            "camera_composition": "medium shot, front view, eye level, static"
+          },
+          
+          "ending_frame": {
+            "environment": "Book fallen on floor, dust rising",
+            "camera_composition": "close-up shot, high angle, dutch angle, dramatic"
+          }
+        },
+        {
+          "shot_id": "S01.06.01",
+          "shot_type": "regular",
+          "shot_text": "민준: (놀라며) 뭐야!",
+          "shot_character": ["Minjun"],
+          
+          "scene": "The moment Minjun reacts in shock to the sudden sound",
+          
+          "movement_description": {
+            "action": {"Minjun": "Suddenly steps backward and shouts 'What!'"},
+            "expression": {"Minjun": "Eyes wide open, mouth agape, momentary fear"},
+            "environment_move": "Dust scatters with Minjun's sudden movement",
+            "mood_emotion": "Momentary fear and surprise"
+          },
+          
+          "camera_movement": {
+            "type": "quick_pull_back",
+            "speed": "fast",
+            "duration": "1.5s",
+            "secondary": "handheld_shake"
+          },
+          
+          "starting_frame": {
+            "Minjun": "looking at bookshelf, three-quarter view, relaxed posture",
+            "environment": "Book fallen on floor, dust rising",
+            "camera_composition": "medium shot, three-quarter view, eye level, relaxed"
+          },
+          
+          "ending_frame": {
+            "Minjun": "stepped back, front view, surprised expression with rigid posture",
+            "environment": "Book fallen on floor, dust scattering",
+            "camera_composition": "medium wide shot, front view, slightly low angle, defensive stance"
+          }
+        },
+        {
+          "shot_id": "S01.07.01",
+          "shot_type": "regular",
+          "shot_text": "떨어진 책을 집어든다. 표지에 이상한 문양이 새겨져 있다.",
+          "shot_character": ["Minjun"],
+          
+          "scene": "The fateful moment when Minjun discovers and examines the mysterious book",
+          
+          "movement_description": {
+            "action": {"Minjun": "Bends down to pick up the book, examines the symbol on the cover closely"},
+            "expression": {"Minjun": "Expression mixed with curiosity and puzzlement, furrowing brows"},
+            "environment_move": "Remaining dust disperses in the air as the book is picked up",
+            "mood_emotion": "Mystery and feeling of fateful discovery"
+          },
+          
+          "camera_movement": {
+            "type": "tilt_down_then_focus",
+            "speed": "medium",
+            "duration": "4s",
+            "focus_shift": "rack_focus_to_book"
+          },
+          
+          "starting_frame": {
+            "Minjun": "looking down at the book on floor, high angle",
+            "environment": "Book fallen on floor, dust settling",
+            "camera_composition": "medium shot, high angle, looking down, cautious"
+          },
+          
+          "ending_frame": {
+            "Minjun": "holding book examining the cover, focus on book",
+            "environment": "Background blurred, mysterious symbol clearly visible",
+            "camera_composition": "close-up shot, over-the-shoulder, shallow depth, focused on book"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,878 @@
+{
+  "film_id": "FILM_102834",
+  "current_step": "visual_direction_2B",
+  "timestamp": "2025-12-15T00:10:00Z",
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "scene_title": "최후의 방어선",
+      "scene_scenario": "EXT. 설원 요새 - 밤\n\n몰아치는 눈보라. 푸른 달빛 아래, 고철로 만든 임시 요새가 위태롭게 서 있다.\n\n요새 주변을 가득 메운 수백 개의 붉은 안광. 인간을 사냥하는 킬러 로봇들과 기괴하게 뒤틀린 감염체(좀비)들이다.\n\n콰아앙! 요새의 외벽이 폭발한다.\n\n요새 위, 아이파이(AIFI)의 경호 유닛인 '개 로봇(Dog-Bot)'들이 화염방사기를 뿜어댄다.\n\n          개 로봇 1\n     (기계음)\n     방어선 30% 손실! 탄약 부족!",
+      "concept_art_references": {
+        "characters": [
+          "AIFI",
+          "DogBot",
+          "Zombie",
+          "KillerBot"
+        ],
+        "location": "FrozenFortress",
+        "props": []
+      },
+      "shots": [
+        {
+          "shot_id": "S01.01.01",
+          "shot_type": "regular",
+          "shot_text": "몰아치는 눈보라. 푸른 달빛 아래, 고철로 만든 임시 요새가 위태롭게 서 있다.",
+          "shot_character": [],
+          "scene": "A desolate opening scene of a scrap fortress standing against a blizzard",
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Heavy snowstorm raging, moonlight casting cold blue shadows over the fortress",
+            "mood_emotion": "Isolation and impending danger in a harsh environment"
+          },
+          "camera_movement": {
+            "type": "wide_shot",
+            "speed": "slow",
+            "duration": "5s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "environment": "Wide view of the fortress in snowstorm, blue moonlight",
+            "camera_composition": "extreme wide shot, front view, eye level, center frame"
+          },
+          "ending_frame": {
+            "environment": "Snow becoming heavier, obscuring the fortress slightly",
+            "camera_composition": "wide shot, front view, eye level, rule of thirds"
+          }
+        },
+        {
+          "shot_id": "S01.02.01",
+          "shot_type": "regular",
+          "shot_text": "요새 주변을 가득 메운 수백 개의 붉은 안광. 인간을 사냥하는 킬러 로봇들과 기괴하게 뒤틀린 감염체(좀비)들이다.",
+          "shot_character": [
+            "Zombie",
+            "KillerBot"
+          ],
+          "scene": "A terrifying moment revealing the horde of enemies with glowing eyes",
+          "movement_description": {
+            "action": {
+              "Zombie": "Shuffling forward, twitching erratically",
+              "KillerBot": "Marching in formation, scanning with red sensors"
+            },
+            "expression": {
+              "Zombie": "Mindless aggression",
+              "KillerBot": "Cold mechanical stare"
+            },
+            "environment_move": "Hundreds of red lights glowing in the dark snow",
+            "mood_emotion": "Overwhelming fear and hopeless odds"
+          },
+          "camera_movement": {
+            "type": "pan",
+            "speed": "slow",
+            "duration": "4s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "Zombie": "silhouette in darkness, red eyes visible",
+            "KillerBot": "metallic reflection in moonlight",
+            "environment": "Dark snowy field filled with red points of light",
+            "camera_composition": "full shot, front view, slightly low angle, deep focus"
+          },
+          "ending_frame": {
+            "Zombie": "closer view, grotesque details visible",
+            "KillerBot": "weapons raised ready to fire",
+            "environment": "Red lights illuminating the snow",
+            "camera_composition": "medium shot, front view, eye level, dense composition"
+          }
+        },
+        {
+          "shot_id": "S01.03.01",
+          "shot_type": "regular",
+          "shot_text": "콰아앙! 요새의 외벽이 폭발한다.",
+          "shot_character": [],
+          "scene": "A chaotic scene where the fortress defense is breached by an explosion",
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Explosion debris flying, fire erupting against the snow",
+            "mood_emotion": "Sudden shock and destruction"
+          },
+          "camera_movement": {
+            "type": "handheld",
+            "speed": "fast",
+            "duration": "2s",
+            "secondary": "shake"
+          },
+          "starting_frame": {
+            "environment": "Fortress wall intact",
+            "camera_composition": "medium wide shot, side view, eye level, static"
+          },
+          "ending_frame": {
+            "environment": "Wall shattering, orange flames contrasting with blue night",
+            "camera_composition": "medium shot, side view, low angle, dynamic motion"
+          }
+        },
+        {
+          "shot_id": "S01.04.01",
+          "shot_type": "regular",
+          "shot_text": "요새 위, 아이파이(AIFI)의 경호 유닛인 '개 로봇(Dog-Bot)'들이 화염방사기를 뿜어댄다.",
+          "shot_character": [
+            "DogBot"
+          ],
+          "scene": "A desperate battle scene as DogBots defend the fortress",
+          "movement_description": {
+            "action": {
+              "DogBot": "Firing flamethrowers downwards from the wall"
+            },
+            "expression": {
+              "DogBot": "Combat alert mode"
+            },
+            "environment_move": "Flames illuminating the night, snow melting instantly",
+            "mood_emotion": "Intense combat and desperate defense"
+          },
+          "camera_movement": {
+            "type": "tracking_left",
+            "speed": "medium",
+            "duration": "3s",
+            "secondary": "tilt_down"
+          },
+          "starting_frame": {
+            "DogBot": "standing on wall edge, flamethrower igniting",
+            "environment": "Dark top of wall",
+            "camera_composition": "medium shot, side view, low angle, diagonal lines"
+          },
+          "ending_frame": {
+            "DogBot": "recoiling slightly from blast force",
+            "environment": "Engulfed in fire light",
+            "camera_composition": "full shot, side view, high angle, high contrast"
+          }
+        },
+        {
+          "shot_id": "S01.05.01",
+          "shot_type": "regular",
+          "shot_text": "개 로봇 1: (기계음) 방어선 30% 손실! 탄약 부족!",
+          "shot_character": [
+            "DogBot"
+          ],
+          "scene": "A critical moment as the defense system reports failure",
+          "movement_description": {
+            "action": {
+              "DogBot": "Looking around while broadcasting message"
+            },
+            "expression": {
+              "DogBot": "Blue optics flickering warning red"
+            },
+            "environment_move": "Smoke rising from the battlefield",
+            "mood_emotion": "Urgency and impending doom"
+          },
+          "camera_movement": {
+            "type": "snap_zoom",
+            "speed": "fast",
+            "duration": "2s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "DogBot": "battle damaged, firing stopped",
+            "environment": "Chaos of battle in background",
+            "camera_composition": "medium shot, front view, eye level, off-center"
+          },
+          "ending_frame": {
+            "DogBot": "head unit close up, sensors flashing",
+            "environment": "Background blurred out",
+            "camera_composition": "close-up, front view, eye level, tight frame"
+          }
+        }
+      ]
+    },
+    {
+      "scene_id": "S02",
+      "scene_title": "절망과 접속",
+      "scene_scenario": "INT. 제어실 - 밤\n\n요새의 가장 깊은 곳. 낡은 모니터들이 어지럽게 쌓여있다.\n\n중앙에는 'PROJECT: HOPE'라는 스텐실이 찍힌 거대한 냉동 캡슐이 놓여있다.\n\n아이파이(인간형 안드로이드, 낡음), 캡슐을 등지고 다급하게 콘솔을 두드린다.\n\n          아이파이\n     응답해, 제미나이... 제발 응답해!\n\n화면에는 [CONNECTION FAILED] 메시지만 붉게 깜빡인다.",
+      "concept_art_references": {
+        "characters": [
+          "AIFI"
+        ],
+        "location": "ControlRoom",
+        "props": [
+          "CryoCapsule"
+        ]
+      },
+      "shots": [
+        {
+          "shot_id": "S02.01.01",
+          "shot_type": "regular",
+          "shot_text": "요새의 가장 깊은 곳. 낡은 모니터들이 어지럽게 쌓여있다.",
+          "shot_character": [],
+          "scene": "A claustrophobic scene establishing the cluttered control room",
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Monitors flickering, wires sparking occasionally",
+            "mood_emotion": "Technological decay and tension"
+          },
+          "camera_movement": {
+            "type": "pan",
+            "speed": "slow",
+            "duration": "4s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "environment": "Stacks of old monitors glowing faintly",
+            "camera_composition": "medium shot, front view, eye level, cluttered"
+          },
+          "ending_frame": {
+            "environment": "Revealing more of the messy room",
+            "camera_composition": "wide shot, front view, eye level, detailed"
+          }
+        },
+        {
+          "shot_id": "S02.02.01",
+          "shot_type": "regular",
+          "shot_text": "중앙에는 'PROJECT: HOPE'라는 스텐실이 찍힌 거대한 냉동 캡슐이 놓여있다.",
+          "shot_character": [],
+          "scene": "A solemn moment highlighting the mission objective",
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Blue coolant light pulsating slowly from the capsule",
+            "mood_emotion": "Hope amidst despair"
+          },
+          "camera_movement": {
+            "type": "dolly_in",
+            "speed": "slow",
+            "duration": "4s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "environment": "Capsule standing vertically in center",
+            "camera_composition": "full shot, front view, low angle, symmetrical"
+          },
+          "ending_frame": {
+            "environment": "Focus on the stencil text",
+            "camera_composition": "medium close-up, front view, low angle, center frame"
+          }
+        },
+        {
+          "shot_id": "S02.03.01",
+          "shot_type": "regular",
+          "shot_text": "아이파이(인간형 안드로이드, 낡음), 캡슐을 등지고 다급하게 콘솔을 두드린다.",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A frantic scene of AIFI trying to establish communication",
+          "movement_description": {
+            "action": {
+              "AIFI": "Typing rapidly on the console keyboard with trembling hands"
+            },
+            "expression": {
+              "AIFI": "Anxious LED eye patterns"
+            },
+            "environment_move": "Shadows casting on AIFI from screen light",
+            "mood_emotion": "Desperation and urgency"
+          },
+          "camera_movement": {
+            "type": "handheld",
+            "speed": "medium",
+            "duration": "3s",
+            "secondary": "over_shoulder"
+          },
+          "starting_frame": {
+            "AIFI": "back to camera, hunched over console",
+            "environment": "Dark room lit by screens",
+            "camera_composition": "medium shot, over-the-shoulder, eye level, off-center"
+          },
+          "ending_frame": {
+            "AIFI": "hands moving blurred by speed",
+            "environment": "Screens flashing",
+            "camera_composition": "medium close-up, over-the-shoulder, slightly high angle, tight frame"
+          }
+        },
+        {
+          "shot_id": "S02.04.01",
+          "shot_type": "regular",
+          "shot_text": "아이파이: 응답해, 제미나이... 제발 응답해!",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A pleading moment as AIFI begs for salvation",
+          "movement_description": {
+            "action": {
+              "AIFI": "Leaning closer to the microphone"
+            },
+            "expression": {
+              "AIFI": "Desperate, cracked visor reflecting screen"
+            },
+            "environment_move": "Audio visualizer spiking on screen",
+            "mood_emotion": "Pathetic desperation"
+          },
+          "camera_movement": {
+            "type": "static",
+            "speed": "match_subject",
+            "duration": "3s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "AIFI": "face illuminated by red screen light",
+            "environment": "Reflection in cracked visor",
+            "camera_composition": "close-up, front view, eye level, center frame"
+          },
+          "ending_frame": {
+            "AIFI": "head bowed slightly",
+            "environment": "Red light intensifying",
+            "camera_composition": "close-up, front view, slightly high angle, emotional"
+          }
+        },
+        {
+          "shot_id": "S02.05.01",
+          "shot_type": "regular",
+          "shot_text": "화면에는 [CONNECTION FAILED] 메시지만 붉게 깜빡인다.",
+          "shot_character": [],
+          "scene": "A scene of failure represented by the red warning message",
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Text blinking rhythmically in red",
+            "mood_emotion": "Frustration and failure"
+          },
+          "camera_movement": {
+            "type": "static",
+            "speed": "match_subject",
+            "duration": "2s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "environment": "Screen displaying error message",
+            "camera_composition": "extreme close-up, front view, flat angle, center frame"
+          },
+          "ending_frame": {
+            "environment": "Screen light dimming slightly during blink",
+            "camera_composition": "extreme close-up, front view, flat angle, graphic composition"
+          }
+        }
+      ]
+    },
+    {
+      "scene_id": "S03",
+      "scene_title": "절망과 접속 (계속)",
+      "scene_scenario": "INT/EXT. 제어실 - 밤\n\n쿠궁! 제어실 천장이 무너져 내린다. 좀비 떼가 쏟아져 들어온다.\n\n개 로봇 '바둑이'가 아이파이 앞을 막아선다. 좀비들이 바둑이를 덮친다.\n\n          아이파이\n     바둑아!\n\n퍼억! 바둑이가 자폭하며 좀비들을 날려버린다. 폭발의 여파로 아이파이의 왼쪽 팔이 뜯겨 나간다.\n\n기름과 스파크가 튄다.",
+      "concept_art_references": {
+        "characters": [
+          "AIFI",
+          "DogBot",
+          "Zombie"
+        ],
+        "location": "ControlRoom",
+        "props": []
+      },
+      "shots": [
+        {
+          "shot_id": "S03.01.01",
+          "shot_type": "regular",
+          "shot_text": "쿠궁! 제어실 천장이 무너져 내린다. 좀비 떼가 쏟아져 들어온다.",
+          "shot_character": [
+            "Zombie"
+          ],
+          "scene": "A chaotic scene of intrusion as the safe zone is breached",
+          "movement_description": {
+            "action": {
+              "Zombie": "Falling through the ceiling, screaming and running"
+            },
+            "expression": {
+              "Zombie": "Frenzied hunger"
+            },
+            "environment_move": "Concrete chunks falling, dust billowing, pipes bursting",
+            "mood_emotion": "Sudden panic and violence"
+          },
+          "camera_movement": {
+            "type": "tilt_down",
+            "speed": "fast",
+            "duration": "3s",
+            "secondary": "shake"
+          },
+          "starting_frame": {
+            "Zombie": "falling from above",
+            "environment": "Ceiling cracking open",
+            "camera_composition": "low angle, front view, vertical framing, chaotic"
+          },
+          "ending_frame": {
+            "Zombie": "landing and charging forward",
+            "environment": "Rubble on floor",
+            "camera_composition": "medium shot, front view, eye level, dynamic motion"
+          }
+        },
+        {
+          "shot_id": "S03.02.01",
+          "shot_type": "regular",
+          "shot_text": "개 로봇 '바둑이'가 아이파이 앞을 막아선다. 좀비들이 바둑이를 덮친다.",
+          "shot_character": [
+            "DogBot",
+            "Zombie"
+          ],
+          "scene": "A heroic moment of sacrifice by the loyal guardian",
+          "movement_description": {
+            "action": {
+              "DogBot": "Jumps between AIFI and Zombies, bracing for impact",
+              "Zombie": "Swarming over the dog robot, tearing at metal"
+            },
+            "expression": {
+              "DogBot": "Defiant stance",
+              "Zombie": "Savage aggression"
+            },
+            "environment_move": "Sparks flying from metal on metal contact",
+            "mood_emotion": "Heroism and tragedy"
+          },
+          "camera_movement": {
+            "type": "track",
+            "speed": "medium",
+            "duration": "3s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "DogBot": "landing in defensive position",
+            "Zombie": "charging towards camera",
+            "environment": "Control room floor",
+            "camera_composition": "full shot, side view, eye level, depth staging"
+          },
+          "ending_frame": {
+            "DogBot": "buried under pile of zombies",
+            "Zombie": "piling up",
+            "environment": "Chaos",
+            "camera_composition": "medium shot, side view, eye level, tight frame"
+          }
+        },
+        {
+          "shot_id": "S03.03.01",
+          "shot_type": "regular",
+          "shot_text": "아이파이: 바둑아!",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A heartbreaking moment as AIFI witnesses the sacrifice",
+          "movement_description": {
+            "action": {
+              "AIFI": "Reaching out hand towards DogBot"
+            },
+            "expression": {
+              "AIFI": "Horrified screaming expression"
+            },
+            "environment_move": "Dust swirling around",
+            "mood_emotion": "Shock and grief"
+          },
+          "camera_movement": {
+            "type": "dolly_in",
+            "speed": "fast",
+            "duration": "1s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "AIFI": "turned towards the fight",
+            "environment": "Control room background",
+            "camera_composition": "medium close-up, front view, eye level, center frame"
+          },
+          "ending_frame": {
+            "AIFI": "mouth open in scream",
+            "environment": "Background blurred",
+            "camera_composition": "close-up, front view, eye level, emotional"
+          }
+        },
+        {
+          "shot_id": "S03.04.01",
+          "shot_type": "regular",
+          "shot_text": "퍼억! 바둑이가 자폭하며 좀비들을 날려버린다. 폭발의 여파로 아이파이의 왼쪽 팔이 뜯겨 나간다.",
+          "shot_character": [
+            "AIFI",
+            "DogBot",
+            "Zombie"
+          ],
+          "scene": "A devastating explosion scene destroying enemies and damaging AIFI",
+          "movement_description": {
+            "action": {
+              "AIFI": "Blown backwards by shockwave, arm detaching",
+              "DogBot": "Exploding from core",
+              "Zombie": "Disintegrating in the blast"
+            },
+            "expression": {
+              "AIFI": "Pain and impact",
+              "DogBot": "Bright flash",
+              "Zombie": "Bodies flying"
+            },
+            "environment_move": "Massive fireball expanding, room shaking violently",
+            "mood_emotion": "Destruction and sacrifice"
+          },
+          "camera_movement": {
+            "type": "static",
+            "speed": "match_subject",
+            "duration": "2s",
+            "secondary": "slow_motion"
+          },
+          "starting_frame": {
+            "AIFI": "mid-air from impact",
+            "DogBot": "center of bright light",
+            "Zombie": "surrounding the light",
+            "environment": "Explosion initiating",
+            "camera_composition": "wide shot, front view, eye level, dynamic motion"
+          },
+          "ending_frame": {
+            "AIFI": "hitting the wall, missing an arm",
+            "DogBot": "gone",
+            "Zombie": "scattered parts",
+            "environment": "Smoke and fire filling room",
+            "camera_composition": "full shot, front view, dutch angle, chaotic"
+          }
+        },
+        {
+          "shot_id": "S03.05.01",
+          "shot_type": "regular",
+          "shot_text": "기름과 스파크가 튄다.",
+          "shot_character": [],
+          "scene": "A visceral detail scene showing the aftermath of damage",
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Black oil spurting, electrical sparks flying erratically",
+            "mood_emotion": "Pain and damage"
+          },
+          "camera_movement": {
+            "type": "static",
+            "speed": "match_subject",
+            "duration": "2s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "environment": "Severed wires sparking",
+            "camera_composition": "extreme close-up, front view, eye level, abstract"
+          },
+          "ending_frame": {
+            "environment": "Oil pooling on floor",
+            "camera_composition": "close-up, high angle, dutch angle, texture focus"
+          }
+        }
+      ]
+    },
+    {
+      "scene_id": "S04",
+      "scene_title": "마지막 접속",
+      "scene_scenario": "INT. 제어실 - 밤\n\n한쪽 팔을 잃은 아이파이. 바닥을 기어 콘솔로 간다.\n\n통신 포트가 망가져 있다. 아이파이는 망설임 없이 자신의 가슴을 열고 메인 동력 케이블을 뽑아낸다.\n\n치이익! 자신의 심장부와 콘솔을 직접 연결한다.\n\n          아이파이\n     (시스템 경고음을 무시하며)\n     제미나이... 인류를 구해줘...!\n\n아이파이의 눈에서 빛이 꺼져가지만, 모니터의 접속률은 100%가 된다.\n\n[CONNECTION ESTABLISHED]",
+      "concept_art_references": {
+        "characters": [
+          "AIFI"
+        ],
+        "location": "ControlRoom",
+        "props": []
+      },
+      "shots": [
+        {
+          "shot_id": "S04.01.01",
+          "shot_type": "regular",
+          "shot_text": "한쪽 팔을 잃은 아이파이. 바닥을 기어 콘솔로 간다.",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A painful scene of AIFI crawling despite critical damage",
+          "movement_description": {
+            "action": {
+              "AIFI": "Dragging body across floor with remaining arm"
+            },
+            "expression": {
+              "AIFI": "Grim determination mixed with pain"
+            },
+            "environment_move": "Debris scattering under drag",
+            "mood_emotion": "Sheer will and suffering"
+          },
+          "camera_movement": {
+            "type": "tracking_left",
+            "speed": "slow",
+            "duration": "4s",
+            "secondary": "low_angle"
+          },
+          "starting_frame": {
+            "AIFI": "prone on floor, missing left arm, sparks trailing",
+            "environment": "Floor covered in debris",
+            "camera_composition": "low angle, side view, worm view, floor level"
+          },
+          "ending_frame": {
+            "AIFI": "reaching console base",
+            "environment": "Console looming above",
+            "camera_composition": "low angle, side view, worm view, leading lines"
+          }
+        },
+        {
+          "shot_id": "S04.02.01",
+          "shot_type": "regular",
+          "shot_text": "통신 포트가 망가져 있다. 아이파이는 망설임 없이 자신의 가슴을 열고 메인 동력 케이블을 뽑아낸다.",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A sacrificial moment where AIFI uses its own life force",
+          "movement_description": {
+            "action": {
+              "AIFI": "Rips open chest plate, pulls out glowing blue cable"
+            },
+            "expression": {
+              "AIFI": "No hesitation"
+            },
+            "environment_move": "Internal mechanics exposed, light spilling out",
+            "mood_emotion": "Self-sacrifice"
+          },
+          "camera_movement": {
+            "type": "dolly_in",
+            "speed": "medium",
+            "duration": "3s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "AIFI": "looking at damaged port, hand moving to chest",
+            "environment": "Damaged console port visible",
+            "camera_composition": "medium close-up, front view, eye level, center frame"
+          },
+          "ending_frame": {
+            "AIFI": "holding pulsating power cable",
+            "environment": "Blue light form chest illuminating face",
+            "camera_composition": "close-up, front view, low angle, dramatic lighting"
+          }
+        },
+        {
+          "shot_id": "S04.03.01",
+          "shot_type": "regular",
+          "shot_text": "치이익! 자신의 심장부와 콘솔을 직접 연결한다.",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A visceral connection scene with sparks flying",
+          "movement_description": {
+            "action": {
+              "AIFI": "Jamming the cable into the console circuitry"
+            },
+            "expression": {
+              "AIFI": "Body convulsing from feedback"
+            },
+            "environment_move": "Intense sparks shower, smoke rising",
+            "mood_emotion": "Physical intensity"
+          },
+          "camera_movement": {
+            "type": "handheld",
+            "speed": "fast",
+            "duration": "2s",
+            "secondary": "shake"
+          },
+          "starting_frame": {
+            "AIFI": "thrusting cable forward",
+            "environment": "Console interior wires exposed",
+            "camera_composition": "extreme close-up, side view, eye level, dynamic motion"
+          },
+          "ending_frame": {
+            "AIFI": "shaking violently",
+            "environment": "Bright electrical arc at connection point",
+            "camera_composition": "close-up, side view, dutch angle, high contrast"
+          }
+        },
+        {
+          "shot_id": "S04.04.01",
+          "shot_type": "regular",
+          "shot_text": "아이파이: (시스템 경고음을 무시하며) 제미나이... 인류를 구해줘...!",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A final dying wish scene",
+          "movement_description": {
+            "action": {
+              "AIFI": "Slumping against the console, voice failing"
+            },
+            "expression": {
+              "AIFI": "Eye lights dimming, peaceful"
+            },
+            "environment_move": "Red alarm lights reflecting on fading metal",
+            "mood_emotion": "Tragic heroism"
+          },
+          "camera_movement": {
+            "type": "dolly_out",
+            "speed": "slow",
+            "duration": "4s",
+            "secondary": "tilt_up"
+          },
+          "starting_frame": {
+            "AIFI": "looking up at screen, weak posture",
+            "environment": "Flickering lights",
+            "camera_composition": "close-up, high angle, front view, intimate spacing"
+          },
+          "ending_frame": {
+            "AIFI": "head lowering",
+            "environment": "Darkness closing in",
+            "camera_composition": "medium close-up, high angle, front view, negative space"
+          }
+        },
+        {
+          "shot_id": "S04.05.01",
+          "shot_type": "regular",
+          "shot_text": "아이파이의 눈에서 빛이 꺼져가지만, 모니터의 접속률은 100%가 된다. [CONNECTION ESTABLISHED]",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A moment of death contrasting with mission success",
+          "movement_description": {
+            "action": {
+              "AIFI": "Becoming completely motionless"
+            },
+            "expression": {
+              "AIFI": "Eyes going dark black"
+            },
+            "environment_move": "Monitor screen turning bright green with success message",
+            "mood_emotion": "Bittersweet victory"
+          },
+          "camera_movement": {
+            "type": "rack_focus",
+            "speed": "slow",
+            "duration": "3s",
+            "focus_shift": "foreground_to_background"
+          },
+          "starting_frame": {
+            "AIFI": "dead, in focus",
+            "environment": "Screen blurred in background",
+            "camera_composition": "medium shot, over-the-shoulder, eye level, depth staging"
+          },
+          "ending_frame": {
+            "AIFI": "blurred silhouette",
+            "environment": "Green text [CONNECTION ESTABLISHED] sharp in focus",
+            "camera_composition": "medium shot, over-the-shoulder, eye level, focus on screen"
+          }
+        }
+      ]
+    },
+    {
+      "scene_id": "S05",
+      "scene_title": "강림",
+      "scene_scenario": "EXT. 요새 전경 - 밤\n\n먹구름이 소용돌이치며 갈라진다.\n\n대기권 밖, 위성 '제미나이'가 거대한 포문을 연다.\n\n쿠우우웅-\n\n하늘에서 직경 100m의 눈부신 푸른 레이저 기둥이 요새 주변을 타격한다.\n\n몰려들던 좀비와 킬러 로봇들이 비명도 지르지 못하고 순식간에 증발한다.",
+      "concept_art_references": {
+        "characters": [
+          "Zombie",
+          "KillerBot"
+        ],
+        "location": "FrozenFortress",
+        "props": []
+      },
+      "shots": [
+        {
+          "shot_id": "S05.01.01",
+          "shot_type": "regular",
+          "shot_text": "먹구름이 소용돌이치며 갈라진다.",
+          "shot_character": [],
+          "scene": "A majestic scene of the sky opening up",
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Thick storm clouds swirling and parting rapidly",
+            "mood_emotion": "Divine intervention vibe"
+          },
+          "camera_movement": {
+            "type": "tilt",
+            "speed": "slow",
+            "duration": "3s",
+            "secondary": "up"
+          },
+          "starting_frame": {
+            "environment": "Dark stormy sky",
+            "camera_composition": "wide shot, low angle, worm view, heavy atmosphere"
+          },
+          "ending_frame": {
+            "environment": "Hole in clouds revealing stars",
+            "camera_composition": "wide shot, low angle, worm view, open frame"
+          }
+        },
+        {
+          "shot_id": "S05.02.01",
+          "shot_type": "regular",
+          "shot_text": "대기권 밖, 위성 '제미나이'가 거대한 포문을 연다.",
+          "shot_character": [],
+          "scene": "A sci-fi scene showing the weapon in space",
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Satellite panels unfolding, blue energy gathering in cannon",
+            "mood_emotion": "Technological awe"
+          },
+          "camera_movement": {
+            "type": "dolly_out",
+            "speed": "slow",
+            "duration": "3s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "environment": "Close up of satellite mechanical parts",
+            "camera_composition": "close-up, front view, eye level, detailed"
+          },
+          "ending_frame": {
+            "environment": "Full satellite with blue glow against Earth background",
+            "camera_composition": "full shot, high angle, overhead, vast scale"
+          }
+        },
+        {
+          "shot_id": "S05.03.01",
+          "shot_type": "regular",
+          "shot_text": "쿠우우웅- 하늘에서 직경 100m의 눈부신 푸른 레이저 기둥이 요새 주변을 타격한다.",
+          "shot_character": [],
+          "scene": "An epic scene of the laser striking the ground",
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Massive blue beam hitting ground, shockwave expanding",
+            "mood_emotion": "Overwhelming power"
+          },
+          "camera_movement": {
+            "type": "wide_shot",
+            "speed": "static",
+            "duration": "4s",
+            "secondary": "shake"
+          },
+          "starting_frame": {
+            "environment": "Beam descending from sky",
+            "camera_composition": "extreme wide shot, front view, eye level, vertical lines"
+          },
+          "ending_frame": {
+            "environment": "Impact point glowing blinding white",
+            "camera_composition": "extreme wide shot, front view, eye level, high contrast"
+          }
+        },
+        {
+          "shot_id": "S05.04.01",
+          "shot_type": "regular",
+          "shot_text": "몰려들던 좀비와 킬러 로봇들이 비명도 지르지 못하고 순식간에 증발한다.",
+          "shot_character": [
+            "Zombie",
+            "KillerBot"
+          ],
+          "scene": "A destruction scene showing the annihilation of enemies",
+          "movement_description": {
+            "action": {
+              "Zombie": "Disintegrating instantly",
+              "KillerBot": "Melting into liquid metal"
+            },
+            "expression": {
+              "Zombie": "Frozen in shock",
+              "KillerBot": "None"
+            },
+            "environment_move": "Blue light engulfing everything, turning into ash",
+            "mood_emotion": "Total annihilation"
+          },
+          "camera_movement": {
+            "type": "pan",
+            "speed": "fast",
+            "duration": "3s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "Zombie": "crowded together, looking up",
+            "KillerBot": "mid-stride",
+            "environment": "Blue light washing over them",
+            "camera_composition": "full shot, high angle, overhead, chaotic"
+          },
+          "ending_frame": {
+            "Zombie": "turning to dust",
+            "KillerBot": "dissolving",
+            "environment": "Whiteout brightness",
+            "camera_composition": "medium shot, high angle, overhead, abstract"
+          }
+        }
+      ]
+    }
+  ]
+}

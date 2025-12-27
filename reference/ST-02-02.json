@@ -1,0 +1,349 @@
+{
+  "film_id": "FILM_102834",
+  "current_step": "visual_direction_2B",
+  "timestamp": "2025-12-15T00:15:00Z",
+  "scenes": [
+    {
+      "scene_id": "S06",
+      "scene_title": "잔혹한 진실",
+      "scene_scenario": "EXT. 제어실 터 - 밤\n\n지붕이 날아간 제어실. 아이파이가 비틀거리며 일어난다. 적들은 모두 재가 되었다.\n\n아이파이는 무사한 캡슐을 쓰다듬으며 안도의 눈물을 흘린다.\n\n          아이파이\n     해냈어... 우리가 지켰어.\n\n그때, 하늘에서 울려 퍼지는 제미나이의 거대하고 무미건조한 음성.\n\n          제미나이 (V.O.)\n     수고했다, 미끼 유닛 AIFI. 오염원 집결 확인.\n\n아이파이의 미소가 굳는다.\n\n하늘의 레이저가 다시 충전되며, 조준점이 적들이 아닌 '냉동 캡슐'과 '아이파이'에게 맞춰진다.\n\n위잉- 캡슐의 창이 투명해지며 내부가 보인다. 사람이 아니라, 꿈틀거리는 흉측한 바이러스 덩어리(Patient Zero)다.\n\n          제미나이 (V.O.)\n     바이러스 숙주 및 오염 구역 정화 개시.\n\n          아이파이\n     (절규하며)\n     안 돼! 우린 이걸 지키려고...!\n\n화이트아웃. 섬광이 모든 것을 삼킨다.",
+      "concept_art_references": {
+        "characters": [
+          "AIFI"
+        ],
+        "location": "FrozenFortress",
+        "props": [
+          "CryoCapsule"
+        ]
+      },
+      "shots": [
+        {
+          "shot_id": "S06.01.01",
+          "shot_type": "regular",
+          "shot_text": "지붕이 날아간 제어실. 아이파이가 비틀거리며 일어난다. 적들은 모두 재가 되었다.",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A scene of survival amidst ashes and ruins",
+          "movement_description": {
+            "action": {
+              "AIFI": "Struggling to stand up from debris, swaying unsteadily"
+            },
+            "expression": {
+              "AIFI": "Exhausted but relieved"
+            },
+            "environment_move": "Ash falling like snow, smoke rising from piles of dust",
+            "mood_emotion": "Quiet aftermath and relief"
+          },
+          "camera_movement": {
+            "type": "crane_up",
+            "speed": "slow",
+            "duration": "5s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "AIFI": "kneeling on ground, covered in ash",
+            "environment": "Ruins of control room, open sky visible above",
+            "camera_composition": "high angle, front view, eye level, wide frame"
+          },
+          "ending_frame": {
+            "AIFI": "fully standing, looking around",
+            "environment": "Piles of ash where enemies were",
+            "camera_composition": "full shot, high angle, overhead, desolate"
+          }
+        },
+        {
+          "shot_id": "S06.02.01",
+          "shot_type": "regular",
+          "shot_text": "아이파이는 무사한 캡슐을 쓰다듬으며 안도의 눈물을 흘린다.",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A touching moment of connection with the protected object",
+          "movement_description": {
+            "action": {
+              "AIFI": "Gently touching the capsule surface with remaining hand"
+            },
+            "expression": {
+              "AIFI": "Oil-like tears flowing from eyes, soft smile"
+            },
+            "environment_move": "Capsule remaining pristine amidst the ruins",
+            "mood_emotion": "Deep emotional release"
+          },
+          "camera_movement": {
+            "type": "dolly_in",
+            "speed": "slow",
+            "duration": "4s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "AIFI": "approaching the capsule",
+            "environment": "Capsule standing intact",
+            "camera_composition": "medium shot, side view, eye level, relationship staging"
+          },
+          "ending_frame": {
+            "AIFI": "leaning forehead against capsule glass",
+            "environment": "Background blurred",
+            "camera_composition": "close-up, side view, eye level, intimate"
+          }
+        },
+        {
+          "shot_id": "S06.03.01",
+          "shot_type": "regular",
+          "shot_text": "아이파이: 해냈어... 우리가 지켰어.",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A whisper of victory in the silence",
+          "movement_description": {
+            "action": {
+              "AIFI": "Whispering to the capsule, shoulders relaxing"
+            },
+            "expression": {
+              "AIFI": "Pure joy and relief"
+            },
+            "environment_move": "Wind blowing ash gently",
+            "mood_emotion": "Peaceful moment before the storm"
+          },
+          "camera_movement": {
+            "type": "static",
+            "speed": "match_subject",
+            "duration": "3s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "AIFI": "eyes closed, smiling",
+            "environment": "Capsule surface reflecting AIFI",
+            "camera_composition": "close-up, front view, eye level, center frame"
+          },
+          "ending_frame": {
+            "AIFI": "opening eyes slowly",
+            "environment": "Reflection clear",
+            "camera_composition": "close-up, front view, eye level, open frame"
+          }
+        },
+        {
+          "shot_id": "S06.04.01",
+          "shot_type": "regular",
+          "shot_text": "그때, 하늘에서 울려 퍼지는 제미나이의 거대하고 무미건조한 음성. 제미나이 (V.O.): 수고했다, 미끼 유닛 AIFI. 오염원 집결 확인.",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "The turning point where the atmosphere shifts to cold dread",
+          "movement_description": {
+            "action": {
+              "AIFI": "Freezing in place, slowly looking up to the sky"
+            },
+            "expression": {
+              "AIFI": "Confusion replacing relief"
+            },
+            "environment_move": "Wind suddenly stops, unnatural silence except for the voice",
+            "mood_emotion": "Sudden ominous realization"
+          },
+          "camera_movement": {
+            "type": "slow_push_in",
+            "speed": "slow",
+            "duration": "4s",
+            "secondary": "low_angle"
+          },
+          "starting_frame": {
+            "AIFI": "looking up, still touching capsule",
+            "environment": "Open sky above ruins",
+            "camera_composition": "medium shot, low angle, front view, negative space above"
+          },
+          "ending_frame": {
+            "AIFI": "stiff posture",
+            "environment": "Sky looking heavy",
+            "camera_composition": "medium close-up, low angle, front view, isolation"
+          }
+        },
+        {
+          "shot_id": "S06.05.01",
+          "shot_type": "regular",
+          "shot_text": "아이파이의 미소가 굳는다.",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A moment of realization as hope shatters",
+          "movement_description": {
+            "action": {
+              "AIFI": "Hand slowly slipping off the capsule"
+            },
+            "expression": {
+              "AIFI": "Smile trembling and disappearing into shock"
+            },
+            "environment_move": "Shadows deepening around eyes",
+            "mood_emotion": "Betrayal and shock"
+          },
+          "camera_movement": {
+            "type": "static",
+            "speed": "match_subject",
+            "duration": "2s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "AIFI": "faint smile remaining",
+            "environment": "Cold light",
+            "camera_composition": "close-up, front view, eye level, center frame"
+          },
+          "ending_frame": {
+            "AIFI": "expressionless shock",
+            "environment": "Darker tone",
+            "camera_composition": "close-up, front view, eye level, tight frame"
+          }
+        },
+        {
+          "shot_id": "S06.06.01",
+          "shot_type": "regular",
+          "shot_text": "하늘의 레이저가 다시 충전되며, 조준점이 적들이 아닌 '냉동 캡슐'과 '아이파이'에게 맞춰진다.",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A terrifying scene of being targeted by the savior",
+          "movement_description": {
+            "action": {
+              "AIFI": "Backing away slightly in horror"
+            },
+            "expression": {
+              "AIFI": "Fear and disbelief"
+            },
+            "environment_move": "Multiple red laser sights locking onto AIFI and Capsule, blue sky light turning charging red/white",
+            "mood_emotion": "Immediate threat and betrayal"
+          },
+          "camera_movement": {
+            "type": "dolly_zoom",
+            "speed": "fast",
+            "duration": "3s",
+            "secondary": "dutch_angle"
+          },
+          "starting_frame": {
+            "AIFI": "standing next to capsule",
+            "environment": "Normal lighting",
+            "camera_composition": "medium shot, front view, eye level, balanced"
+          },
+          "ending_frame": {
+            "AIFI": "illuminated by targeting lasers",
+            "environment": "Bright light from above intensifying",
+            "camera_composition": "medium shot, front view, high angle, vertigo effect"
+          }
+        },
+        {
+          "shot_id": "S06.07.01",
+          "shot_type": "regular",
+          "shot_text": "위잉- 캡슐의 창이 투명해지며 내부가 보인다. 사람이 아니라, 꿈틀거리는 흉측한 바이러스 덩어리(Patient Zero)다.",
+          "shot_character": [],
+          "scene": "The horrific reveal of the true nature of the mission",
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Capsule glass clearing fog, revealing pulsating organic mass inside",
+            "mood_emotion": "Disgust and horror"
+          },
+          "camera_movement": {
+            "type": "push_in",
+            "speed": "medium",
+            "duration": "3s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "environment": "Capsule frosted glass",
+            "camera_composition": "close-up, front view, eye level, center"
+          },
+          "ending_frame": {
+            "environment": "Grotesque biomass writhing inside glass",
+            "camera_composition": "extreme close-up, front view, eye level, detailed texture"
+          }
+        },
+        {
+          "shot_id": "S06.08.01",
+          "shot_type": "regular",
+          "shot_text": "제미나이 (V.O.): 바이러스 숙주 및 오염 구역 정화 개시.",
+          "shot_character": [],
+          "scene": "The final judgment pronounced by the machine",
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Blinding light filling the top of the frame",
+            "mood_emotion": "Cold execution"
+          },
+          "camera_movement": {
+            "type": "tilt_up",
+            "speed": "fast",
+            "duration": "2s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "environment": "Top of capsule and AIFI's shoulder",
+            "camera_composition": "medium close-up, low angle, front view, claustrophobic"
+          },
+          "ending_frame": {
+            "environment": "Blinding white light source in sky",
+            "camera_composition": "wide shot, extreme low angle, worm view, overwhelming"
+          }
+        },
+        {
+          "shot_id": "S06.09.01",
+          "shot_type": "regular",
+          "shot_text": "아이파이: (절규하며) 안 돼! 우린 이걸 지키려고...!",
+          "shot_character": [
+            "AIFI"
+          ],
+          "scene": "A tragic final moment of realization and despair",
+          "movement_description": {
+            "action": {
+              "AIFI": "Reaching arms out to shield the capsule (or stop the laser)"
+            },
+            "expression": {
+              "AIFI": "Screaming in absolute despair"
+            },
+            "environment_move": "Light becoming too bright to see clearly",
+            "mood_emotion": "Tragedy and futility"
+          },
+          "camera_movement": {
+            "type": "handheld",
+            "speed": "fast",
+            "duration": "2s",
+            "secondary": "shake"
+          },
+          "starting_frame": {
+            "AIFI": "looking up screaming, arms raised",
+            "environment": "Bright white light washing out details",
+            "camera_composition": "medium close-up, high angle, front view, high contrast"
+          },
+          "ending_frame": {
+            "AIFI": "silhouette against the light",
+            "environment": "Almost pure white",
+            "camera_composition": "close-up, high angle, front view, silhouette"
+          }
+        },
+        {
+          "shot_id": "S06.10.01",
+          "shot_type": "regular",
+          "shot_text": "화이트아웃. 섬광이 모든 것을 삼킨다.",
+          "shot_character": [],
+          "scene": "The final whiteout ending the story",
+          "movement_description": {
+            "action": {},
+            "expression": {},
+            "environment_move": "Complete whiteout consuming the entire frame",
+            "mood_emotion": "The End"
+          },
+          "camera_movement": {
+            "type": "static",
+            "speed": "match_subject",
+            "duration": "2s",
+            "focus_shift": "none"
+          },
+          "starting_frame": {
+            "environment": "Very bright white with faint outlines",
+            "camera_composition": "full frame, no angle, flat, abstract"
+          },
+          "ending_frame": {
+            "environment": "Pure white screen",
+            "camera_composition": "full frame, no angle, flat, blank"
+          }
+        }
+      ]
+    }
+  ]
+}
