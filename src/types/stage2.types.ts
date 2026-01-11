@@ -9,10 +9,8 @@ export interface MovementDescription {
 
 export interface CameraMovement {
   type: string;
-  speed?: string;
-  duration?: string;
-  secondary?: string;
-  focus_shift?: string;
+  speed: string;
+  duration: string;
 }
 
 export interface FrameDescription {
@@ -27,10 +25,10 @@ export interface Stage2Shot {
   shot_text: string;
   shot_character: string[];
   scene: string;
-  movement_description?: MovementDescription;
-  camera_movement?: CameraMovement;
-  starting_frame?: FrameDescription;
-  ending_frame?: FrameDescription;
+  movement_description: MovementDescription;
+  camera_movement: CameraMovement;
+  starting_frame: FrameDescription;
+  ending_frame: FrameDescription;
 
   // Editor Specific Fields
   userRequest?: string; // For the "Request" field

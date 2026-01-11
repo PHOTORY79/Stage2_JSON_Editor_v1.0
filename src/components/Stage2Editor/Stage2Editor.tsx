@@ -147,7 +147,10 @@ export const Stage2Editor: React.FC<Stage2EditorProps> = ({ scene, step, onUpdat
                         shot_text: lm.line,
                         shot_character: [],
                         scene: scene.scene_title,
-                        camera_movement: undefined,
+                        movement_description: { action: {}, expression: {}, environment_move: '', mood_emotion: '' },
+                        camera_movement: { type: 'static', speed: 'medium', duration: '0s' },
+                        starting_frame: { camera_composition: '', environment: '' },
+                        ending_frame: { camera_composition: '', environment: '' },
                         updateStatus: status
                     } as Stage2Shot;
                 }

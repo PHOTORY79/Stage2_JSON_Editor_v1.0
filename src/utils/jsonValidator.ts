@@ -180,14 +180,13 @@ export function validateStage2Json(json: Stage2JSON): ValidationError[] {
     if (!json.timestamp) addError('essential', 'timestamp가 누락되었습니다.', 'timestamp');
 
     const VALID_CAMERA_TYPES = [
-        "static", "pan", "tilt", "dolly_in", "dolly_out", "dolly_zoom", "track", "truck",
-        "crane", "crane_up", "crane_down", "handheld", "steadicam", "zoom", "rack_focus",
-        "arc", "whip_pan", "whip_pan_down", "dutch_angle", "overhead", "worm_view",
-        "spiral", "pendulum", "drift", "snap_zoom", "push_in", "pull_out",
-        "slow_push_in", "quick_pull_back", "tracking_backward", "tracking_left",
-        "tilt_down_then_focus"
+        "dolly_in", "dolly_out", "push_in", "snap_zoom",
+        "tilt_up", "tilt_down", "pedestal_up", "pedestal_down",
+        "crane_up", "crane_down", "pan_left", "pan_right",
+        "orbit", "whip_pan", "tracking", "steadicam", "handheld", "shake", "rack_focus",
+        "static", "boom_up_push_in", "orbit_push_in", "crane_up_dolly_out", "orbit_crane_up"
     ];
-    const VALID_SPEEDS = ["very_slow", "slow", "medium", "fast", "match_subject"];
+    const VALID_SPEEDS = ["slow", "medium", "fast"];
 
     // 2. Scene Validation
     if (!json.scenes || !Array.isArray(json.scenes)) {
@@ -258,11 +257,15 @@ export function validateStage2Json(json: Stage2JSON): ValidationError[] {
                             addError('schema', `유효하지 않은 camera_type입니다: ${shot.camera_movement.type}`, `${shotPath}.camera_movement.type`);
                         }
 
-                        if (shot.camera_movement.speed && !VALID_SPEEDS.includes(shot.camera_movement.speed)) {
-                            addError('schema', `유효하지 않은 speed입니다: ${shot.camera_movement.speed}`, `${shotPath}.camera_movement.speed`);
+                        if (!shot.camera_movement.speed) {
+                            addError('schema', 'camera_movement.speed가 누락되었습니다.', `${shotPath}.camera_movement.speed`);
+                        } else if (!VALID_SPEEDS.includes(shot.camera_movement.speed)) {
+                            addError('schema', `유효하지 않은 speed입니다: ${shot.camera_movement.speed} (Allow: slow, medium, fast)`, `${shotPath}.camera_movement.speed`);
                         }
 
-                        if (shot.camera_movement.duration && !/^[0-9]+(\.[0-9]+)?s$/.test(shot.camera_movement.duration)) {
+                        if (!shot.camera_movement.duration) {
+                            addError('schema', 'camera_movement.duration이 누락되었습니다.', `${shotPath}.camera_movement.duration`);
+                        } else if (!/^[0-9]+(\.[0-9]+)?s$/.test(shot.camera_movement.duration)) {
                             addError('schema', 'duration 형식이 올바르지 않습니다 (Example: 4s)', `${shotPath}.camera_movement.duration`);
                         }
                     }
@@ -270,6 +273,12 @@ export function validateStage2Json(json: Stage2JSON): ValidationError[] {
                     // Movement Description
                     if (!shot.movement_description) {
                         addError('visual', 'movement_description이 누락되었습니다.', `${shotPath}.movement_description`);
+                    } else {
+                        const md = shot.movement_description;
+                        if (!md.action) addError('visual', 'movement_description.action이 누락되었습니다.', `${shotPath}.movement_description.action`);
+                        if (!md.expression) addError('visual', 'movement_description.expression이 누락되었습니다.', `${shotPath}.movement_description.expression`);
+                        if (!md.environment_move) addError('visual', 'movement_description.environment_move가 누락되었습니다.', `${shotPath}.movement_description.environment_move`);
+                        if (!md.mood_emotion) addError('visual', 'movement_description.mood_emotion이 누락되었습니다.', `${shotPath}.movement_description.mood_emotion`);
                     }
 
                     // Frames
