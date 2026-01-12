@@ -126,12 +126,27 @@ function App() {
   }, []);
 
   const handleDownload = () => {
-    const dataToDownload = parsedJsonStage2 || parsedJsonStage1;
+    let dataToDownload: any = parsedJsonStage2 || parsedJsonStage1;
     if (!dataToDownload) return;
 
     let filename = 'data.json';
     if (parsedJsonStage2) {
       filename = `${parsedJsonStage2.scenes[0]?.scene_id || 'stage2'}_edited.json`;
+
+      // Sanitize Stage 2 Data (Remove transient fields)
+      const cleanScenes = parsedJsonStage2.scenes.map(scene => ({
+        ...scene,
+        shots: scene.shots.map(shot => {
+          const { userRequest, freeInput, updateStatus, ...cleanShot } = shot;
+          return cleanShot;
+        })
+      }));
+
+      dataToDownload = {
+        ...parsedJsonStage2,
+        scenes: cleanScenes
+      };
+
     } else if (parsedJsonStage1) {
       filename = `${parsedJsonStage1.film_id}_${parsedJsonStage1.current_step}.json`;
     }

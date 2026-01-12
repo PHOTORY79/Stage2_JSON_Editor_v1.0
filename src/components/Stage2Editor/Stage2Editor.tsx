@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Stage2Scene, Stage2Shot } from '../../types/stage2.types';
 import { ShotAccordion } from './ShotAccordion';
 import { PromptModal } from './PromptModal';
-import { FileText, Edit2, RotateCcw, Save, Wand2 } from 'lucide-react';
+import { SceneJsonImportModal } from './SceneJsonImportModal';
+import { FileText, Edit2, RotateCcw, Save, Wand2, Copy, FileJson } from 'lucide-react';
 
 interface Stage2EditorProps {
     scene: Stage2Scene;
@@ -18,6 +19,7 @@ export const Stage2Editor: React.FC<Stage2EditorProps> = ({ scene, step, onUpdat
     const [scenarioText, setScenarioText] = useState('');
     const [isEditingScenario, setIsEditingScenario] = useState(false);
     const [isPromptOpen, setIsPromptOpen] = useState(false);
+    const [isImportModalOpen, setIsImportModalOpen] = useState(false);
 
     // Sync from Props
     useEffect(() => {
@@ -53,6 +55,26 @@ export const Stage2Editor: React.FC<Stage2EditorProps> = ({ scene, step, onUpdat
         const newShots = shots.map(s => s.shot_id === updatedShot.shot_id ? updatedShot : s);
         setShots(newShots);
         onUpdate({ ...scene, shots: newShots });
+    };
+
+    const handleCopyJson = () => {
+        // Sanitize: Remove transient editor fields
+        const sanitizedScene = {
+            ...scene,
+            shots: scene.shots.map(shot => {
+                const { userRequest, freeInput, updateStatus, ...cleanShot } = shot;
+                return cleanShot;
+            })
+        };
+        navigator.clipboard.writeText(JSON.stringify(sanitizedScene, null, 2));
+        alert('Scene JSON copied to clipboard!');
+    };
+
+    const handleImportScene = (updatedScene: Stage2Scene) => {
+        onUpdate(updatedScene);
+        setShots(updatedScene.shots);
+        // Also update text view to match new shots
+        setScenarioText(updatedScene.shots.map(s => s.shot_text).join('\n'));
     };
 
     const toggleEditMode = () => {
@@ -96,23 +118,12 @@ export const Stage2Editor: React.FC<Stage2EditorProps> = ({ scene, step, onUpdat
             const newShots: Stage2Shot[] = lineMatches.map(lm => {
                 let status: 'new' | 'split' | 'split-added' | 'merged' | 'none' = 'none';
                 let baseShot = lm.matched[0];
-                let cameraInfo = baseShot?.camera_movement;
 
+                // Determine Status
                 if (lm.matched.length === 0) {
                     status = 'new';
                 } else if (lm.matched.length > 1) {
                     status = 'merged';
-                    // Merge Metadata
-                    const types = lm.matched.map(s => s.camera_movement?.type).filter(Boolean);
-                    const speeds = lm.matched.map(s => s.camera_movement?.speed).filter(Boolean);
-                    const durations = lm.matched.map(s => s.camera_movement?.duration).filter(Boolean);
-                    if (types.length > 0) {
-                        cameraInfo = {
-                            type: [...new Set(types)].join(' + '),
-                            speed: [...new Set(speeds)].join(' / '),
-                            duration: [...new Set(durations)].join(' + ')
-                        };
-                    }
                 } else {
                     // Single Match
                     const oldId = lm.matched[0].shot_id;
@@ -132,15 +143,22 @@ export const Stage2Editor: React.FC<Stage2EditorProps> = ({ scene, step, onUpdat
                     oldShotSeenCounter.set(oldId, seenCount + 1);
                 }
 
-                if (baseShot) {
+                // Metadata Rules:
+                // - New / Split-Added -> Blank(Default) Metadata
+                // - Split(First) / Merged / None -> Keep Original(Primary) Metadata
+
+                const isBlankMetadata = status === 'new' || status === 'split-added';
+
+                if (baseShot && !isBlankMetadata) {
+                    // Inherit Metadata from Primary Matched Shot
                     return {
                         ...baseShot,
                         shot_id: lm.shotId,
                         shot_text: lm.line,
-                        camera_movement: cameraInfo,
                         updateStatus: status
                     };
                 } else {
+                    // Create Clean Shot with Default Metadata
                     return {
                         shot_id: lm.shotId,
                         shot_type: 'regular',
@@ -259,14 +277,36 @@ export const Stage2Editor: React.FC<Stage2EditorProps> = ({ scene, step, onUpdat
                         <h2 className="text-sm font-bold text-white">Shot List</h2>
                     </div>
 
-                    {/* Prompt View Button */}
-                    <button
-                        onClick={() => setIsPromptOpen(true)}
-                        className="btn btn-sm btn-ghost btn-square text-accent-blue hover:bg-accent-blue/10 hover:text-accent-blue"
-                        title="View Final Prompt"
-                    >
-                        <Wand2 size={18} />
-                    </button>
+                    <div className="flex gap-1">
+                        {/* Copy Scene JSON */}
+                        <button
+                            onClick={handleCopyJson}
+                            className="btn btn-sm btn-ghost btn-square text-text-secondary hover:bg-bg-tertiary hover:text-white"
+                            title="Copy Scene JSON"
+                        >
+                            <Copy size={18} />
+                        </button>
+
+                        {/* Paste Scene JSON */}
+                        <button
+                            onClick={() => setIsImportModalOpen(true)}
+                            className="btn btn-sm btn-ghost btn-square text-text-secondary hover:bg-bg-tertiary hover:text-white"
+                            title="Paste/Import Scene JSON"
+                        >
+                            <FileJson size={18} />
+                        </button>
+
+                        <div className="w-[1px] h-4 bg-white/10 mx-1"></div>
+
+                        {/* Prompt View Button */}
+                        <button
+                            onClick={() => setIsPromptOpen(true)}
+                            className="btn btn-sm btn-ghost btn-square text-accent-blue hover:bg-accent-blue/10 hover:text-accent-blue"
+                            title="View Final Prompt"
+                        >
+                            <Wand2 size={18} />
+                        </button>
+                    </div>
                 </div>
 
                 <div className="flex-1 overflow-y-auto custom-scrollbar p-0">
@@ -290,6 +330,14 @@ export const Stage2Editor: React.FC<Stage2EditorProps> = ({ scene, step, onUpdat
                 currentShots={shots}
                 originalShots={scene.shots}
                 sceneTitle={scene.scene_id}
+            />
+
+            {/* Import Scene JSON Modal */}
+            <SceneJsonImportModal
+                isOpen={isImportModalOpen}
+                onClose={() => setIsImportModalOpen(false)}
+                onImport={handleImportScene}
+                currentSceneId={scene.scene_id}
             />
         </div>
     );
