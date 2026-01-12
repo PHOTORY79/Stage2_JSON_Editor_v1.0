@@ -13,6 +13,7 @@ interface JsonEditorProps {
 export function JsonEditor({ jsonInput, errors, onJsonUpdate, onValidate }: JsonEditorProps) {
   const [editedJson, setEditedJson] = useState(jsonInput);
   const [copied, setCopied] = useState(false);
+  const [codeCopied, setCodeCopied] = useState(false);
   const [isRetrying, setIsRetrying] = useState(false);
   const [message, setMessage] = useState<{ text: string; type: 'success' | 'error' | 'info' } | null>(null);
 
@@ -44,6 +45,13 @@ export function JsonEditor({ jsonInput, errors, onJsonUpdate, onValidate }: Json
     await navigator.clipboard.writeText(prompt);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleCopyCode = async () => {
+    await navigator.clipboard.writeText(editedJson);
+    setCodeCopied(true);
+    setTimeout(() => setCodeCopied(false), 2000);
+    showMessage('전체 JSON 코드가 클립보드에 복사되었습니다.', 'success');
   };
 
   const handleAutoFix = () => {
@@ -160,17 +168,31 @@ export function JsonEditor({ jsonInput, errors, onJsonUpdate, onValidate }: Json
             </span>
           </div>
 
-          {/* Re-validate Button */}
-          <button
-            onClick={handleApply}
-            className="flex items-center gap-2 px-4 py-1.5 rounded-lg
-              bg-gradient-to-r from-accent-purple to-accent-purple-dark text-white
-              shadow-lg shadow-accent-purple/25 hover:shadow-accent-purple/40 hover:scale-[1.02]
-              transition-all duration-200 font-medium text-sm"
-          >
-            <RefreshCw className="w-3.5 h-3.5" />
-            <span>다시 검증</span>
-          </button>
+          <div className="flex items-center gap-2">
+            {/* Copy Code Button */}
+            <button
+              onClick={handleCopyCode}
+              className="flex items-center gap-2 px-4 py-1.5 rounded-lg
+                bg-bg-secondary border border-border-color text-text-secondary
+                hover:bg-bg-tertiary hover:text-white hover:border-accent-blue
+                transition-all duration-200 font-medium text-sm"
+            >
+              {codeCopied ? <Check className="w-3.5 h-3.5 text-accent-green" /> : <Copy className="w-3.5 h-3.5" />}
+              <span>{codeCopied ? '복사 완료' : '코드 복사'}</span>
+            </button>
+
+            {/* Re-validate Button */}
+            <button
+              onClick={handleApply}
+              className="flex items-center gap-2 px-4 py-1.5 rounded-lg
+                bg-gradient-to-r from-accent-purple to-accent-purple-dark text-white
+                shadow-lg shadow-accent-purple/25 hover:shadow-accent-purple/40 hover:scale-[1.02]
+                transition-all duration-200 font-medium text-sm"
+            >
+              <RefreshCw className="w-3.5 h-3.5" />
+              <span>다시 검증</span>
+            </button>
+          </div>
         </div>
 
         {/* Editor Area with Line Numbers - Fixed Syntax here */}
